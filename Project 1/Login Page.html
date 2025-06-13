@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      align-items: center;
+      height: 80vh;
+      margin: 50px;
+      background-color:#FFFFFF;
+    }
+
+    .card {
+      border: 4px linen black;
+      border-radius: 20px;
+      height: 450px;
+      width: 350px;
+    
+      display: flexbox;
+      justify-items: center;
+      align-content: center;
+      background-color: #B0E07B;
+      box-shadow: 7px 7px 10px;
+    }
+
+    .text {
+      height: 32px;
+      width: auto;
+      background: #FFF7D5;
+      border: 1px;
+      border-radius: 15px;
+
+    }
+
+    input {
+      text-align: center;
+    }
+
+    #b1 {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+      border: 1px;
+      height: 32px;
+      width: 150px;
+      background: #0A7EF7;
+    }
+    .newaccount{
+      font-size:10px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Login Page</h1><br>
+    <input type="text" placeholder="Enter User Name" class="text"><br><br>
+    <input type="text" placeholder="Enter Password" class="text"><br><br>
+    <input type="button" value=" Login" id="b1">
+    <a href="New Account.html" class="newaccount">Create New Account</a>
+
+  </div>
+    <script>
+        // JavaScript code
+    document.getElementById("b1").addEventListener("click", function() {
+    window.location.href="Home Page.html"
+        
+    });
+    </script>
+</body>
+
+</html>
